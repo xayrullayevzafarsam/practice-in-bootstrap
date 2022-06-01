@@ -1,0 +1,30 @@
+/* header start  */
+
+#home {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../img/bg-img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navbar .navbar-nav .nav-item .nav-link,
+.navbar-brand {
+  color: rgba(245, 245, 245, 0.752);
+}
+
+#home .home-content p {
+  max-width: 600px;
+  margin: 20px auto;
+  font-size: 13px;
+}
+
+.home-content a {
+  border-radius: 30px;
+  background-color: rgb(58, 135, 58);
+  color: white;
+}
+
+/* header end  */
