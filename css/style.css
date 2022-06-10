@@ -52,7 +52,7 @@
 }
 
 .about-card img {
-  width: 50px;
+  max-width: 100%;
   height: 50px;
 }
 
@@ -104,4 +104,85 @@
 .text-and-img-links a:hover {
   background-color: rgb(82, 127, 14);
   border: none;
+}
+
+/* text and img end  */
+
+/* portfolio start  */
+
+#portfolio {
+  padding: 70px;
+}
+.menu-gallery {
+  margin-bottom: 60px;
+}
+.menu-gallery ul label {
+  font-size: 20px;
+  padding-left: 25px;
+  transition: 0.4s;
+}
+
+.menu-gallery ul label:hover {
+  color: greenyellow;
+}
+
+.images .row .img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+#r1:checked ~ .gallery .images .row .img {
+  opacity: 1;
+  position: relative;
+}
+
+#r2:checked ~ .gallery .images .row .nature {
+  opacity: 1;
+  position: relative;
+}
+
+#r2:checked ~ .gallery .images .row .work,
+#r2:checked ~ .gallery .images .row .city,
+#r2:checked ~ .gallery .images .row .technology {
+  opacity: 0;
+  position: absolute;
+}
+
+#r3:checked ~ .gallery .images .row .work {
+  opacity: 1;
+  position: relative;
+}
+
+#r3:checked ~ .gallery .images .row .nature,
+#r3:checked ~ .gallery .images .row .city,
+#r3:checked ~ .gallery .images .row .technology {
+  opacity: 0;
+  position: absolute;
+}
+
+#r4:checked ~ .gallery .images .row .city {
+  opacity: 1;
+  position: relative;
+}
+
+#r4:checked ~ .gallery .images .row .nature,
+#r4:checked ~ .gallery .images .row .work,
+#r4:checked ~ .gallery .images .row .technology {
+  opacity: 0;
+  position: absolute;
+}
+
+#r5:checked ~ .gallery .images .row .technology {
+  opacity: 1;
+  position: relative;
+}
+
+#r5:checked ~ .gallery .images .row .nature,
+#r5:checked ~ .gallery .images .row .work,
+#r5:checked ~ .gallery .images .row .city {
+  opacity: 0;
+  position: absolute;
+}
+
+input {
+  display: none;
 }
